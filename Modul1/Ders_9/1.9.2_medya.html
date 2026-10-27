@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders 9 - Video ve Ses Oynatıcıları</title>
+</head>
+<body>
+    <h1>Video ve Ses Oynatıcıları</h1>
+
+    <h2>Podcast Oynatıcı</h2>
+    
+     <audio src="./audios/muzik.mp3" controls autoplay muted loop>  
+        <!-- controls u herzaman kullamalısın ve auteplay yaptığında muted de eklemelisin
+          loop eklersen de sonsız döngüye girerek ses bittiğinde yeniden başlar-->
+        Tarayıcınız ses oynatıcıyı desteklemiyor.
+    </audio>
+
+    <h2>Tanıtım Videosu</h2>
+
+    <video src="./videos/ornek.mp4" width="75%" controls autoplay muted loop>
+       <!-- width="75%" de yapabilirsin ama % sayıdan sonra gelmeli -->
+        Tarayıcınız video oynatıcıyı desteklemiyor
+    </video>
+
+    <video controls with="500">
+ <source src="./videos/ornek.mp4"> 
+  <source src="./videos/ornek.webm">  
+ 
+ <!-- yukarıdaki gibi yapabilirsin avantajı ise birden fazla source ekleyebilirsin -->
+ Tarayıcınız oynatıcıyı desteklemiyor
+    </video>
+
+
+</body>
+</html>
